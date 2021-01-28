@@ -175,7 +175,7 @@ adbtn.addEventListener('click',function(e){
 ```
 
 ## OUTPUT:
-![output](./static/pics/output.png)
+![output](./static/pics/outputpage.png)
 
 ## REPORT:
 ![report](./static/pics/report.png)
