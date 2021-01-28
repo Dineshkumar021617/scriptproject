@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Adding Two Numbers</title>
+    <link rel="stylesheet" href="{% static 'css/math1.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="formview">
+            <h1 class="banner">
+                Area of a circle
+            </h1>
+            <div class="content">
+                <form>
+                    {% csrf_token %}
+                    <div class="forminput">
+                        <label for="radius">Radius=</label>
+                        <input type="text" name="radius" id="radius">
+                    </div>                    
+                    <div class="forminput">
+                        <button type="button" name="circle_area" id="circle_area">Calculate</button>
+                    </div>
+                    <div class="forminput">
+                        <label for="answer">Area of the circle: </label>
+                        <input type="text" name="answer" id="answer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+    <div class="container">
+        <div class="formview">
+            <h1 class="banner">
+                 Volume of a cylinder
+            </h1>
+            <div class="content">
+                <form>
+                    {% csrf_token %}
+                    <div class="forminput">
+                        <label for="r">Radius=</label>
+                        <input type="text" name="r" id="r">
+                    </div>
+                    <div  class="forminput">
+                        <label for="h">Height=</label>
+                        <input type="text" name="h" id="h">
+                    </div>                    
+                    <div class="forminput">
+                        <button type="button" name="btn_vol_cyn" id="btn_vol_cyn">Calculate</button>
+                    </div>
+                    <div class="forminput">
+                        <label for="answ">Vollume of cylinder</label>
+                        <input type="text" name="answ" id="answ">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/math1.js"></script>
+</body>
+</html>
