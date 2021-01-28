@@ -159,7 +159,7 @@ addbtn.addEventListener('click',function(e){
     a=document.querySelector("#radius");
     ans=document.querySelector('#answer');
     let b;
-    b=parseFloat(a.value)*parseFloat(a.value);
+    b=3.14*parseFloat(a.value)*parseFloat(a.value);
     ans.value=b;
 });
 
