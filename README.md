@@ -29,7 +29,7 @@ Publish the website in the given URL.
 <html>
 
 <head>
-    <title>Adding Two Numbers</title>
+    <title>Math Calculations</title>
     <link rel="stylesheet" href="{% static 'css/math1.css' %}">
 </head>
 
